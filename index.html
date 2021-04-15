@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Chat List</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/214208cbc2.js" crossorigin="anonymous"></script>
+       <!--style.css  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+    <script src="AddDeleteChat.js" type="module"></script>
+  <body>
+    <!-- NAVBAR -->
+
+        <nav class="navbar navbar-light bg-light">
+           <a class="navbar-brand" href="#">
+              <img src="Assests/LOGO.jfif" width="60" height="60" alt="">
+           </a>
+           <h5>
+               CHATLIST PROJECT
+           </h5>
+        </nav>
+
+    <!-- MAIN BODY -->
+
+        <div class="row ROWW">
+            <div class="container1 col-lg-8 col-md-8 col-sm-7 ml-2 w3-theme-l2 ">
+                <!-- MESSAGE BOX -->
+                <div class="messageBox m-4">
+                    <!-- MESSAGE HEADER -->
+                    <div class="header border-bottom d-flex flex-row">
+                        <span class="col-4 " >
+                            <i class="fas fa-comments mb-3 mt-4 ml-4"></i>
+                        </span>
+                        <span class="col-4 " >
+                            <i class="fas fa-video mb-3 mt-4 ml-4"></i>
+                        </span>
+                        <span class="col-4 " >
+                            <i class="fas fa-stream mb-3 mt-4 ml-4"></i>
+                        </span>
+                    </div>
+                    
+                    <!-- MESSAGE BODY -->
+                    <div class="messageBody">
+                        <div class="messagecontainer pt-2">
+                             <ul id="chatListItemUl" class="items">
+                          
+   
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container3  mt-2 mb-2">
+                    <center> <button id="generate-step"  class="btn btn-danger btn-lg"> Generate New Step</button></center>
+                </div>
+            </div>
+
+            <!-- AREA -->
+            <div class="container2 col ml-2 mt-4">
+                <div class="stepShower" style="height:500px; width: 100%;" >
+                    <center> <h5>Click on generate new step to get updates !!</h5><center>
+                    <hr>
+                    <span id="temptext" style="width: 100%; text-align: center; font-size:large">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    <!-- BUTTON TO GENERATED A STEP  -->
+        
+     
+
+    <!-- Footer -->    
+    <footer class="bg-light text-center text-lg-start  footter">
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">Chat List</a>
+     </div>
+  
+    </footer>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, than Popper.js, than Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+
+<template>
+    <li id ="ChatListItemLi" class=" msBody">
+        <div class="row ">
+           <div class="col-2 pt-1" style="align-items: center;">
+                <img src="Assests/a1.png" alt="" id="Avtaar" class="avtaar" alt="vv">
+           </div>
+           <div class="col-10 pt-2 ">
+                 <div class="Info d-flex flex-row" style="justify-content:space-between;">
+                     <div id="Names" class="name"></div>
+                     <div id= "Time" class="time"></div>
+                 </div>
+                 <div id ="Message" class="message"> </div>
+             </div>
+        </div>
+    </li>
+    
+</template>
+</html>
